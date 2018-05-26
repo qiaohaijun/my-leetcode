@@ -5,4 +5,7 @@
 
 结果就是错在了优先级的问题上.
 
-### 汇编 __buildin
+###  __builtin 函数
+```
+__builtin_popcount
+```
