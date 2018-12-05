@@ -12,7 +12,10 @@ class Solution(object):
           return strs[0]
 
         base = strs[0]     
-        min_len=100000
+        
+        import sys
+        min_len=sys.maxint
+        
         for m_str in strs:
           min_len = min(len(m_str),min_len)
           
