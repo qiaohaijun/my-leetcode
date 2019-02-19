@@ -16,7 +16,7 @@ class Solution(object):
           num = x%10 + num*10
           x=x/10
           
-        if num > pow(2,31)-1 or num < pow(-2,31):
+        if num > pow(2,31)-1 or num < -1*pow(2,31):
           return 0
         if is_negative == True:
           return -1*num
