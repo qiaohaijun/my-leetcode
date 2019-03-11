@@ -1,0 +1,8 @@
+- #84 largest rectangle in histogram
+- #316 remove duplicate letters
+- #402 remove k digits
+- #85 #84变形, 最大矩形
+- #42 trapping rain water
+- #739 daily temperatures
+- #321 greate maximun number
+- #155 min_stack/max_stack
