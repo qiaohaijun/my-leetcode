@@ -19,8 +19,9 @@ class Solution(object):
                 # faster dynamic programming
                 
                 dp[i][j] += dp[i-1][j]
+                c = coins[i-1]
                 # 压缩状态
-                if j>=coins[i-1]:
-                    dp[i][j] += dp[i][j-coins[i-1]]
+                if j>=c:
+                    dp[i][j] += dp[i][j-c]
         return dp[-1][-1]
             
