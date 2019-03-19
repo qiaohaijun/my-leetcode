@@ -1,18 +1,21 @@
 class Solution:
     def isValid(self, s):
 
-        d = {'}': '{', ']': '[', ')': '('}
-
-        stk = [' ']
+        # map = dict()
+        # map['}'] = '{'
+        # map[']'] = '['
+        # map[')'] = '('
+        map = {')':'(',']':'[','}':'{'}
+        stack = [' ']
 
         for c in s:
 
-            c2 = d.get(c, '')
-            if stk[-1] == c2:
-                stk.pop()
+            c2 = map.get(c, '')
+            if stack[-1] == c2:
+                stack.pop()
             elif c2:
                 return False
             else:
-                stk.append(c)
+                stack.append(c)
 
-        return len(stk) == 1
+        return len(stack) == 1
