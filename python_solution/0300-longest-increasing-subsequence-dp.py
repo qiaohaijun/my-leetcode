@@ -9,7 +9,8 @@ class Solution(object):
           return 0
         
         # 所有的单个的nums[i] 都可以构成一个lis, 长度为1
-        dp = [1]*n
+        # 但是如果改为dp =[1]*n,结果是错误的,需要找找原因.
+        dp = [0]*n
         # dp初始化条件, 如果只有一个元素, 那么这个dp[0]=1
         dp[0] = 1
         max_lis = 1
@@ -23,4 +24,4 @@ class Solution(object):
           dp[i]+=1
           max_lis = max(max_lis,dp[i])
       
-      return ret_lis
+        return max_lis
