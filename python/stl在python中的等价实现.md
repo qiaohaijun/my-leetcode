@@ -1,0 +1,7 @@
+- std::set and std::map 没有相应的等价实现
+- std::unordered_set -> set
+- std::unordered_map -> map
+- std::bitset -> 没有等价实现
+- std::vector -> list
+- std::deque and std::queue -> collections.deque
+- std::priority_queue -> heapq
